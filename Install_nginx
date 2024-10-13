@@ -1,0 +1,17 @@
+#!/bin/bash
+
+<<note
+
+This script will install NGNIX
+
+note
+
+echo "***********************INSTALLING NGNIX*****************************"
+
+sudo apt-get update
+sudo apt-get install nginx -y
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+echo "***********************INSTALLED NGNIX*****************************"
